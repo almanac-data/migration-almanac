@@ -1,57 +1,61 @@
 {
-  "name": "Example Almanac",
-  "description": "An open, versioned index of public example data.",
+  "name": "Migration Almanac",
+  "description": "An open, versioned index of public migration data.",
   "count": 1,
   "by_status": {
     "live": 1
   },
   "entries": [
     {
-      "id": "example-dataset",
+      "id": "idmc-global-internal-displacement-database",
       "type": "dataset",
-      "title": "Example Dataset (replace this with a real entry)",
-      "description": "A placeholder catalog entry so the index builds and CI passes on a fresh template. Delete this file once you have added your first real dataset.\n",
-      "publisher": "Example Agency",
+      "title": "IDMC Global Internal Displacement Database (GIDD)",
+      "description": "The Internal Displacement Monitoring Centre's validated annual estimates of internal displacements (new movements) and internally displaced people at year end, by country and by cause (conflict and violence, disasters), with event-level disaggregated data. The standard global reference for internal displacement figures.\n",
+      "publisher": "Internal Displacement Monitoring Centre (IDMC), part of the Norwegian Refugee Council",
+      "jurisdiction": {
+        "scope": "international-ngo",
+        "country": null
+      },
       "topics": [
-        "example"
+        "internal-displacement",
+        "disaster-displacement",
+        "conflict-displacement",
+        "idps"
       ],
       "source": {
-        "canonical_url": "https://example.org",
-        "identifiers": {
-          "doi": null
-        }
+        "canonical_url": "https://www.internal-displacement.org/database/displacement-data/"
       },
       "access": {
         "method": [
-          "web"
+          "web",
+          "bulk",
+          "api"
         ],
         "auth_required": false,
-        "auth_note": null,
+        "auth_note": "API access requires a key requested from IDMC; web downloads need none",
         "rate_limit": null
       },
       "format": [
-        "html"
+        "xlsx",
+        "geojson"
       ],
-      "coverage": {
-        "spatial": "global",
-        "temporal": "n/a",
-        "cadence": "static"
-      },
-      "license": "CC0-1.0",
-      "attribution": "Example Agency",
-      "observed": {
-        "checked": "2026-08-23",
-        "reachable": true,
-        "http_status": 200,
-        "final_url": "https://example.org/",
-        "redirect_chain": [],
-        "fingerprint_result": "no-baseline"
-      },
       "status": "live",
-      "status_since": "2026-07-01",
+      "status_since": "2026-10-31",
       "status_source": "curator",
-      "recovery": [],
-      "notes": "This is a template stub. See SETUP.md for how to stand up your own almanac vertical, then replace this entry with real datasets.\n"
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (214 countries and territories)",
+        "temporal": "2008-2025",
+        "cadence": "annual"
+      },
+      "license": "CC-BY-3.0-IGO (IDMC website terms of use, site-wide)",
+      "attribution": "Internal Displacement Monitoring Centre (IDMC), Global Internal Displacement Database",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (curl). The page renders its figures with JavaScript, so it was read in headless Chromium. It heads \"Global Internal Displacement Database (GIDD)\" and \"IDMC's global repository of internal displacement data, covering since 2008\", shows \"Validated figures for 2008-2025 globally · 214 countries and territories\" (82.5m IDPs as of 2025), and offers \"Disaggregated data for 2025\" as GeoJSON and Excel plus \"Annual displacement data\" as Excel. It says \"For provisional data from the past 180 days, consult the Internal Displacement Unit (IDU). To request an API key, read the documentation.\" The API documentation and the IDU weren't opened. UNHCR's API also redistributes IDMC figures (idmc endpoint).\nLicence checked 2026-10-31: IDMC terms of use (https://www.internal-displacement.org/terms-of-use/, HTTP 200), \"Using our content\": \"Unless specified otherwise in particular terms of use, anyone may reproduce, distribute, adapt, translate and publicly perform the content on this website, without explicit permission, provided that the content is accompanied by an acknowledgement that IDMC is the source ... This is in line with the Creative Commons – Attribution (BY) 3.0 IGO – license.\" It's a site-wide statement, not a data-specific licence, and the API may carry its own terms (not checked).\n"
     }
   ]
 }
