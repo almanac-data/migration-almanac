@@ -1,9 +1,9 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 13,
+  "count": 14,
   "by_status": {
-    "live": 13
+    "live": 14
   },
   "entries": [
     {
@@ -665,6 +665,59 @@
       "license": "unverified — State Department public-domain notice conflicts with the RPC site's \"All rights reserved\" terms",
       "attribution": "U.S. Department of State, Bureau of Population, Refugees, and Migration, Refugee Processing Center, Admissions & Arrivals",
       "notes": "Human-verified 2026-10-31: HTTP 200 (plain curl with a browser User-Agent and headless Chromium both returned 200; no headless browser needed). The old URL https://www.wrapsnet.org/admissions-and-arrivals/ returns HTTP 308 and redirects here. The page says \"Reports are posted on the 5th of the following month, or the following Monday if the 5th is on a weekend\" and \"Historical monthly arrivals are subject to change due to reconciliation.\" On the day checked it offered \"Refugee Admissions Report as of September 30, 2026\" (xlsx) and PDFs for refugee arrivals by state and nationality, Amerasian arrivals and SIV arrivals, all as of September 30, 2026. The Archives page (https://www.rpc.state.gov/archives/) lists \"Refugee Admissions by Region since 1975 as of September 30, 2026\" and FY arrivals-by-region files through FY 2026. Its \"Reports to Congress\" list ends at \"FY 2024 Report to Congress\"; no FY 2025 or FY 2026 report is listed. No suspension or discontinuation notice was seen on either page. State Department visa statistics (travel.state.gov) were not cataloged in this entry.\nLicence checked 2026-10-31: https://www.state.gov/copyright-information says \"Unless a copyright is indicated, information on State Department websites is in the public domain and may be copied and distributed without permission. Citation of the U.S. State Department as source of the information is appreciated.\" However, the RPC site's own https://www.rpc.state.gov/terms-of-use/ reads, under \"Copyright And Trademark Notices\", \"All contents of the U.S. Refugee Admissions Program Web Site are: and/or its suppliers. All rights reserved.\" That text looks like an unfilled template, but it is what the site says, so the licence is left unverified. Not checked: file contents and how far back the monthly archive goes.\n"
+    },
+    {
+      "id": "uk-home-office-immigration-system-statistics",
+      "type": "dataset",
+      "title": "UK Home Office Immigration System Statistics",
+      "description": "The Home Office's quarterly official statistics on the UK immigration system: entry clearance visas, passenger arrivals, extensions and settlement, citizenship, asylum claims, decisions, appeals and support, resettlement, irregular migration including small boat arrivals, immigration detention and returns, and the EU Settlement Scheme.\n",
+      "publisher": "Home Office (United Kingdom)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "GB"
+      },
+      "topics": [
+        "asylum",
+        "visas",
+        "irregular-migration",
+        "small-boats",
+        "immigration-detention",
+        "returns",
+        "united-kingdom"
+      ],
+      "source": {
+        "canonical_url": "https://www.gov.uk/government/collections/immigration-statistics-quarterly-release"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "ods"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United Kingdom (some tables by local authority)",
+        "temporal": "varies by table (year ending June 2026 latest)",
+        "cadence": "quarterly"
+      },
+      "license": "OGL-UK-3.0 (Open Government Licence v3.0, GOV.UK site footer, except where otherwise stated)",
+      "attribution": "Home Office, Immigration system statistics",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The collection \"Immigration system statistics quarterly release\" holds 61 documents, 49 data-table pages and 3 guidance pages; the latest release is \"Immigration system statistics, year ending June 2026\" (updated 27 August 2026, per the GOV.UK content API). The data tables page (https://www.gov.uk/government/statistical-data-sets/immigration-system-statistics-data-tables) lists asylum summary and detailed datasets, entry clearance visas, passenger arrivals, extensions, citizenship, returns, immigration detention and \"Irregular migration to the UK\" tables, among them \"IER_D02: Number of asylum claims from small boat arrivals\". It notes that \"Passengers refused entry at the border\" tables have been discontinued. The files seen are .xlsx and ODS; their contents weren't opened, and start years weren't checked. Some tables lag the headline release (e.g. appeals tables at year ending March 2023).\nLicence checked 2026-10-31: the GOV.UK footer on the collection and data tables pages reads \"All content is available under the Open Government Licence v3.0, except where otherwise stated\". It's a site-wide statement; no data-specific licence was found on the pages.\n"
     }
   ]
 }
