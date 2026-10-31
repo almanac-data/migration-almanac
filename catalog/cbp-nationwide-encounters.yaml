@@ -35,6 +35,13 @@ observed:
   final_url: https://www.cbp.gov/document/stats/nationwide-encounters
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261023053306/https://www.cbp.gov/document/stats/nationwide-encounters
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-23'
+  notes: Wayback capture made while the resource was live.
 coverage:
   spatial: United States (nationwide; by CBP area of responsibility, state, USBP sector and OFO field office)
   temporal: FY2020-present in the current CSVs (FY23-FY26 rolling file); older summary pages from FY2017

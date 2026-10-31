@@ -38,6 +38,13 @@ observed:
   final_url: https://ohss.dhs.gov/topics/immigration/yearbook
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261022025004/https://ohss.dhs.gov/topics/immigration/yearbook
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-22'
+  notes: Wayback capture made while the resource was live.
 coverage:
   spatial: United States (national; some tables by state, country of birth or citizenship)
   temporal: yearbooks FY1996-FY2024 listed (FY2024 tables partly released)

@@ -36,6 +36,13 @@ observed:
   final_url: https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261023163617/https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-23'
+  notes: Wayback capture made while the resource was live.
 coverage:
   spatial: United States (national; some tables by USCIS field office, state or country)
   temporal: varies by report (Fiscal Year 2026, Quarter 3 latest)
