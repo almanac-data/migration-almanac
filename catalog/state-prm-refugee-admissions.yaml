@@ -1,0 +1,43 @@
+id: state-prm-refugee-admissions
+type: dataset
+title: US Refugee Admissions and Arrivals (Refugee Processing Center)
+description: |
+  The State Department Bureau of Population, Refugees, and Migration's monthly reports on refugees admitted through the U.S. Refugee Admissions Program (USRAP), by country of chargeability, nationality, US state of resettlement and month, plus Amerasian and Iraqi/Afghan Special Immigrant Visa arrivals. The archive holds arrivals by region since 1975 and the annual proposed-admissions reports to Congress. Formerly published as WRAPSNET.
+publisher: U.S. Department of State, Bureau of Population, Refugees, and Migration (Refugee Processing Center)
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- refugees
+- refugee-resettlement
+- special-immigrant-visas
+- humanitarian-admissions
+source:
+  canonical_url: https://www.rpc.state.gov/admissions-and-arrivals/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+- pdf
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States (national and by state of resettlement; by nationality of refugee)
+  temporal: 1975-present (regional totals); current fiscal year in detail (as of September 30, 2026)
+  cadence: monthly
+license: unverified — State Department public-domain notice conflicts with the RPC site's "All rights reserved" terms
+attribution: U.S. Department of State, Bureau of Population, Refugees, and Migration, Refugee Processing Center, Admissions & Arrivals
+notes: |
+  Human-verified 2026-10-31: HTTP 200 (plain curl with a browser User-Agent and headless Chromium both returned 200; no headless browser needed). The old URL https://www.wrapsnet.org/admissions-and-arrivals/ returns HTTP 308 and redirects here. The page says "Reports are posted on the 5th of the following month, or the following Monday if the 5th is on a weekend" and "Historical monthly arrivals are subject to change due to reconciliation." On the day checked it offered "Refugee Admissions Report as of September 30, 2026" (xlsx) and PDFs for refugee arrivals by state and nationality, Amerasian arrivals and SIV arrivals, all as of September 30, 2026. The Archives page (https://www.rpc.state.gov/archives/) lists "Refugee Admissions by Region since 1975 as of September 30, 2026" and FY arrivals-by-region files through FY 2026. Its "Reports to Congress" list ends at "FY 2024 Report to Congress"; no FY 2025 or FY 2026 report is listed. No suspension or discontinuation notice was seen on either page. State Department visa statistics (travel.state.gov) were not cataloged in this entry.
+  Licence checked 2026-10-31: https://www.state.gov/copyright-information says "Unless a copyright is indicated, information on State Department websites is in the public domain and may be copied and distributed without permission. Citation of the U.S. State Department as source of the information is appreciated." However, the RPC site's own https://www.rpc.state.gov/terms-of-use/ reads, under "Copyright And Trademark Notices", "All contents of the U.S. Refugee Admissions Program Web Site are: and/or its suppliers. All rights reserved." That text looks like an unfilled template, but it is what the site says, so the licence is left unverified. Not checked: file contents and how far back the monthly archive goes.
