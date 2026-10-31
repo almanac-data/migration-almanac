@@ -1,0 +1,43 @@
+id: frontex-detections-illegal-border-crossings
+type: dataset
+title: Frontex Migratory Map and Detections of Illegal Border-Crossings
+description: |
+  Frontex's monthly statistics on detections of illegal border-crossings at the EU's external borders, by migratory route (Central Mediterranean, Western Balkans, Eastern Mediterranean and others), border type and nationality, behind its interactive Migratory Map. The most-cited series on irregular arrivals to the EU.
+publisher: Frontex, European Border and Coast Guard Agency
+jurisdiction:
+  scope: regional-bloc
+  country: null
+topics:
+- irregular-migration
+- border-crossings
+- border-enforcement
+- migratory-routes
+- european-union
+source:
+  canonical_url: https://www.frontex.europa.eu/what-we-do/monitoring-and-risk-analysis/migratory-map/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: EU and Schengen-associated external borders, by route and nationality
+  temporal: not checked (data as of October 2026 latest)
+  cadence: monthly
+license: proprietary (Frontex legal disclaimer; private use only, other reuse needs Frontex permission)
+attribution: 'Frontex, Detections of illegal border-crossings (FRAN and JORA data)'
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The page "Migratory Map" says "This map presents the current migratory situation in Europe. Each circle represents one of the main migratory routes into the EU." It links "Detections of illegal border-crossings statistics download (updated monthly)" to Monthly_detections_of_IBC_2026_10_05.xlsx (HTTP 200, about 1.5 MB, not opened) with "Source: FRAN and JORA data as of October 2026." It cautions that "The data presented refer to detections of illegal border-crossing rather than the number of persons, as the same person may cross the external border several times." The map itself is an embedded viewer and wasn't inspected. The start year and breakdowns in the spreadsheet weren't checked. The download file name changes each month, so the landing page is cataloged.
+  Licence checked 2026-10-31: Frontex legal disclaimer (https://www.frontex.europa.eu/legal-disclaimer/, HTTP 200), Copyright Notice: "This site and its content are the copyright of Frontex with the exception of the legal instruments. ... The materials provided on this website may be used for private purposes in accordance with applicable legal provisions. For use, reproduction or transmission for purposes other than private use, please request permission from Frontex." It's site-wide; no data-specific licence was found. Restrictive: the entry links to the data but doesn't imply it can be redistributed. The attribution string is the curator's (no citation format found).
