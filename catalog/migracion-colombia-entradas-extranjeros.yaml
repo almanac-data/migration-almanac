@@ -32,9 +32,11 @@ status_since: '2026-10-31'
 status_source: curator
 observed:
   checked: '2026-10-31'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://www.datos.gov.co/Estad-sticas-Nacionales/Entradas-de-extranjeros-a-Colombia/96sh-4v8d
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: Colombia (national, by migration control post), by nationality
   temporal: 2012-2026
