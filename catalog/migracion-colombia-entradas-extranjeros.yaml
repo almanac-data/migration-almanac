@@ -1,0 +1,46 @@
+id: migracion-colombia-entradas-extranjeros
+type: dataset
+title: Migración Colombia – Entradas de extranjeros a Colombia
+description: |
+  Migración Colombia's monthly counts of foreign nationals entering Colombia since 2012, by nationality, sex and migration control post, published on Colombia's open data portal. One of a family of Migración Colombia datasets there (departures of Colombians, Venezuelan entries, temporary protection pre-registrations) covering the main Latin American migration corridor.
+publisher: Unidad Administrativa Especial Migración Colombia
+jurisdiction:
+  scope: national
+  country: CO
+topics:
+- migration-flows
+- border-crossings
+- entries
+- venezuela-migration
+- colombia
+- latin-america
+source:
+  canonical_url: https://www.datos.gov.co/Estad-sticas-Nacionales/Entradas-de-extranjeros-a-Colombia/96sh-4v8d
+access:
+  method:
+  - web
+  - api
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- json
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Colombia (national, by migration control post), by nationality
+  temporal: 2012-2026
+  cadence: irregular
+license: CC-BY-SA-4.0 (datos.gov.co dataset licence)
+attribution: Unidad Administrativa Especial Migración Colombia, Entradas de extranjeros a Colombia (datos.gov.co)
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The short URL https://www.datos.gov.co/d/96sh-4v8d redirects to the canonical URL. The dataset metadata (https://www.datos.gov.co/api/views/96sh-4v8d.json) reads "Muestra el consolidado de entradas de extranjeros a Colombia desde el 2012, discriminado por nacionalidad y género", with columns Año, Mes, Nacionalidad, Codigo M49, Femenino, Masculino, Indefinido, Total and Ubicación PCM. The rows were last updated 20 August 2026. The SODA API (/resource/96sh-4v8d.json, no key) returned 181,186 rows with a maximum year of 2026. The stated update frequency is "Semestral", so cadence is irregular (the schema has no semiannual value). Related Migración Colombia datasets on the portal: Salidas de colombianos desde el territorio nacional (efw5-jiej), MIGRANTES A COLOMBIA (c4mm-qn8q), and Pre registros Estatuto Temporal de Protección para Migrantes Venezolanos (6eyy-q57b). Migración Colombia's own site (https://www.migracioncolombia.gov.co/, HTTP 200) has a "Planeación y Estadística" section that wasn't explored. CSV/JSON formats come from the standard Socrata exports; only JSON was fetched.
+  Licence checked 2026-10-31: the dataset's own metadata gives license "Creative Commons Attribution | Share Alike 4.0 International" (licenseId CC_40_BY_SA, termsLink http://creativecommons.org/licenses/by-sa/4.0/legalcode). It's a dataset-specific licence. The other Migración Colombia datasets listed above carry the same licence in the portal catalog.
