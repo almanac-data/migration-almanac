@@ -1,9 +1,9 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 10,
+  "count": 11,
   "by_status": {
-    "live": 10
+    "live": 11
   },
   "entries": [
     {
@@ -512,6 +512,59 @@
       "license": "unverified — no data licence on the page; the gob.mx portal terms (gob.mx/terminos) allow viewing and download for personal, non-commercial use only",
       "attribution": "Unidad de Política Migratoria, Registro e Identidad de Personas, SEGOB, Boletín estadístico",
       "notes": "Human-verified 2026-10-31: HTTP 200, but the response is a 730-byte \"Error ... This page can't be displayed. Contact support\" page (a web application firewall) for curl with a browser user agent and for headless Chromium alike. The content was read only through WebFetch, so the link checker will probably see this error page. WebFetch shows the Dirección de Estadística page of the UPMRIP with \"Boletines estadísticos\" (a 2026 monthly bulletin and annual bulletins 2002-2025) and \"Cuadros de datos (2026)\" on entries, documentation and stay status, people in an irregular migration situation, protection groups, and returns of Mexicans from the United States and Canada. The month of the latest bulletin wasn't shown. File formats weren't checked, so `format` is omitted. The former host politicamigratoria.gob.mx didn't answer (connection failed).\nLicence checked 2026-10-31, NOT verified for the data: the bulletins page has no licence statement. The gob.mx portal terms (https://www.gob.mx/terminos, HTTP 200) say \"Se autoriza al Usuario a visualizar y descargar los materiales contenidos en el sitio solamente para su uso personal y no para un uso comercial\" and \"El Usuario no deberá modificar, reproducir o mostrar pública o comercialmente los materiales\". It's not certain those portal-wide terms govern these statistics (the page sits on portales.segob.gob.mx). Mexico's open data licence (Libre Uso MX) applies only to datasets on datos.gob.mx, which returned an Akamai 403 and couldn't be searched for an equivalent dataset.\n"
+    },
+    {
+      "id": "migracion-colombia-entradas-extranjeros",
+      "type": "dataset",
+      "title": "Migración Colombia – Entradas de extranjeros a Colombia",
+      "description": "Migración Colombia's monthly counts of foreign nationals entering Colombia since 2012, by nationality, sex and migration control post, published on Colombia's open data portal. One of a family of Migración Colombia datasets there (departures of Colombians, Venezuelan entries, temporary protection pre-registrations) covering the main Latin American migration corridor.\n",
+      "publisher": "Unidad Administrativa Especial Migración Colombia",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "CO"
+      },
+      "topics": [
+        "migration-flows",
+        "border-crossings",
+        "entries",
+        "venezuela-migration",
+        "colombia",
+        "latin-america"
+      ],
+      "source": {
+        "canonical_url": "https://www.datos.gov.co/Estad-sticas-Nacionales/Entradas-de-extranjeros-a-Colombia/96sh-4v8d"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "json"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Colombia (national, by migration control post), by nationality",
+        "temporal": "2012-2026",
+        "cadence": "irregular"
+      },
+      "license": "CC-BY-SA-4.0 (datos.gov.co dataset licence)",
+      "attribution": "Unidad Administrativa Especial Migración Colombia, Entradas de extranjeros a Colombia (datos.gov.co)",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The short URL https://www.datos.gov.co/d/96sh-4v8d redirects to the canonical URL. The dataset metadata (https://www.datos.gov.co/api/views/96sh-4v8d.json) reads \"Muestra el consolidado de entradas de extranjeros a Colombia desde el 2012, discriminado por nacionalidad y género\", with columns Año, Mes, Nacionalidad, Codigo M49, Femenino, Masculino, Indefinido, Total and Ubicación PCM. The rows were last updated 20 August 2026. The SODA API (/resource/96sh-4v8d.json, no key) returned 181,186 rows with a maximum year of 2026. The stated update frequency is \"Semestral\", so cadence is irregular (the schema has no semiannual value). Related Migración Colombia datasets on the portal: Salidas de colombianos desde el territorio nacional (efw5-jiej), MIGRANTES A COLOMBIA (c4mm-qn8q), and Pre registros Estatuto Temporal de Protección para Migrantes Venezolanos (6eyy-q57b). Migración Colombia's own site (https://www.migracioncolombia.gov.co/, HTTP 200) has a \"Planeación y Estadística\" section that wasn't explored. CSV/JSON formats come from the standard Socrata exports; only JSON was fetched.\nLicence checked 2026-10-31: the dataset's own metadata gives license \"Creative Commons Attribution | Share Alike 4.0 International\" (licenseId CC_40_BY_SA, termsLink http://creativecommons.org/licenses/by-sa/4.0/legalcode). It's a dataset-specific licence. The other Migración Colombia datasets listed above carry the same licence in the portal catalog.\n"
     }
   ]
 }
