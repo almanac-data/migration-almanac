@@ -1,0 +1,44 @@
+id: unhcr-refugee-population-statistics
+type: dataset
+title: UNHCR Refugee Population Statistics Database (Refugee Data Finder and API)
+description: |
+  UNHCR's global statistics on forcibly displaced and stateless people: refugees, asylum-seekers, internally displaced persons, returnees and stateless persons by country of origin and asylum, plus asylum applications and decisions, demographics and solutions (resettlement, returns, naturalisation). The reference series for refugee figures worldwide.
+publisher: Office of the United Nations High Commissioner for Refugees (UNHCR)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- refugees
+- asylum
+- internal-displacement
+- statelessness
+- forced-displacement
+source:
+  canonical_url: https://api.unhcr.org/docs/refugee-statistics.html
+access:
+  method:
+  - web
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- json
+- csv
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (countries of origin and asylum)
+  temporal: 1951-2025 (population totals); other series start later
+  cadence: irregular
+license: unverified — UNHCR's dataset terms page (unhcr.org/terms-use-datasets) sits behind a Cloudflare challenge and could not be read; secondary sources say CC-BY-4.0
+attribution: UNHCR Refugee Population Statistics Database
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The canonical URL is the Refugee Statistics API documentation, which says "UNHCR's Refugee Population Statistics Database contains information about forcibly displaced populations spanning across almost 70 years of statistical activities. It covers displaced populations such as refugees, asylum-seekers and internally displaced persons, including their demographics." It lists endpoints for population, asylumApplications, asylumDecisions, demographics, solutions, idmc, unrwa and nowcasting. The API needed no key: https://api.unhcr.org/population/v1/years/ lists years from 1951, and /population/?year=2025 returned a 2025 global row (refugees 28,461,306; IDPs 64,239,352). The docs say download=true returns CSV. The public front end, the Refugee Data Finder at https://www.unhcr.org/refugee-statistics/, returned HTTP 403 with a Cloudflare "Just a moment..." challenge to both curl and headless Chromium (waited 20 s), so the API docs are cataloged instead; whoever can open the Data Finder may prefer it as canonical. The cadence is set to irregular because the schema has no semiannual value; UNHCR's mid-year and end-year releases are from general knowledge and weren't checked on the site. The IDMC figures inside the API duplicate the separate idmc entry.
+  Licence checked 2026-10-31, NOT verified: https://www.unhcr.org/terms-use-datasets returned HTTP 403 (Cloudflare) to curl, headless Chromium and WebFetch, and no archive copy could be retrieved. A web search snippet of that page reads "Except where otherwise provided, the datasets made available by UNHCR on the UNHCR Refugee Population Statistics Database are licensed under a Creative Commons Attribution International License 4.0", and says some indicators come from third parties and "may not be shared, redistributed or reused without the consent of the original data provider". UNHCR's HDX datasets are tagged CC BY or CC BY-IGO. Treat CC-BY-4.0 as likely but confirm on the terms page before relying on it. The attribution is the database name that the snippet asks reusers to credit.
