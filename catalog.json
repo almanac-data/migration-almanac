@@ -1,9 +1,9 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 15,
+  "count": 16,
   "by_status": {
-    "live": 15
+    "live": 16
   },
   "entries": [
     {
@@ -769,6 +769,58 @@
       "license": "unverified — UNHCR's dataset terms page (unhcr.org/terms-use-datasets) sits behind a Cloudflare challenge and could not be read; secondary sources say CC-BY-4.0",
       "attribution": "UNHCR Refugee Population Statistics Database",
       "notes": "Human-verified 2026-10-31: HTTP 200. The canonical URL is the Refugee Statistics API documentation, which says \"UNHCR's Refugee Population Statistics Database contains information about forcibly displaced populations spanning across almost 70 years of statistical activities. It covers displaced populations such as refugees, asylum-seekers and internally displaced persons, including their demographics.\" It lists endpoints for population, asylumApplications, asylumDecisions, demographics, solutions, idmc, unrwa and nowcasting. The API needed no key: https://api.unhcr.org/population/v1/years/ lists years from 1951, and /population/?year=2025 returned a 2025 global row (refugees 28,461,306; IDPs 64,239,352). The docs say download=true returns CSV. The public front end, the Refugee Data Finder at https://www.unhcr.org/refugee-statistics/, returned HTTP 403 with a Cloudflare \"Just a moment...\" challenge to both curl and headless Chromium (waited 20 s), so the API docs are cataloged instead; whoever can open the Data Finder may prefer it as canonical. The cadence is set to irregular because the schema has no semiannual value; UNHCR's mid-year and end-year releases are from general knowledge and weren't checked on the site. The IDMC figures inside the API duplicate the separate idmc entry.\nLicence checked 2026-10-31, NOT verified: https://www.unhcr.org/terms-use-datasets returned HTTP 403 (Cloudflare) to curl, headless Chromium and WebFetch, and no archive copy could be retrieved. A web search snippet of that page reads \"Except where otherwise provided, the datasets made available by UNHCR on the UNHCR Refugee Population Statistics Database are licensed under a Creative Commons Attribution International License 4.0\", and says some indicators come from third parties and \"may not be shared, redistributed or reused without the consent of the original data provider\". UNHCR's HDX datasets are tagged CC BY or CC BY-IGO. Treat CC-BY-4.0 as likely but confirm on the terms page before relying on it. The attribution is the database name that the snippet asks reusers to credit.\n"
+    },
+    {
+      "id": "uscis-immigration-and-citizenship-data",
+      "type": "dataset",
+      "title": "USCIS Immigration and Citizenship Data",
+      "description": "U.S. Citizenship and Immigration Services' data library of quarterly and fiscal-year reports on benefit applications: receipts, approvals, denials, pending cases and processing for naturalization (N-400), green cards (I-485), family and employment petitions, employment authorization (I-765), DACA, TPS, T and U visas, special immigrant juveniles and more. The authoritative source on the legal-immigration caseload and backlog.\n",
+      "publisher": "U.S. Citizenship and Immigration Services (USCIS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "immigration-benefits",
+        "naturalization",
+        "green-cards",
+        "daca",
+        "temporary-protected-status",
+        "humanitarian-immigration",
+        "backlog"
+      ],
+      "source": {
+        "canonical_url": "https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national; some tables by USCIS field office, state or country)",
+        "temporal": "varies by report (Fiscal Year 2026, Quarter 3 latest)",
+        "cadence": "quarterly"
+      },
+      "license": "public-domain (USCIS website policies)",
+      "attribution": "U.S. Citizenship and Immigration Services, Immigration and Citizenship Data",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (headless Chromium; plain curl with a browser User-Agent got HTTP 403 from the CDN, so this site needs a headless browser). The page leads with \"Fiscal Year 2026: Quarter 3 Data Reports, April–June 2026\", a curated list of XLSX files dated September 08, 2026, including \"All USCIS Application and Petition Form Types\", \"Net Backlog and Frontlog\", N-400 by field office, I-485, I-130, I-765 (including the (c)(8) pending-asylum category), DACA, TPS (I-821) by country of designation, and T/U/VAWA/SIJ reports. The searchable data library below it showed \"1784 total rows\". It also links the H-1B, H-2A and H-2B employer data hubs. No release schedule, delay or discontinuation notice was seen on the page. Not checked: whether an affirmative-asylum (I-589) quarterly table is in the current quarter's list (I did not see one in the curated list, but did not search the full library), file contents, or the employer data hubs.\nLicence checked 2026-10-31: https://www.uscis.gov/website-policies says \"Information presented on this WWW site is considered public information and may be distributed or copied. Use of appropriate byline/photo/image credit is requested.\" It adds that some licensed images \"are not in the public domain\". This is a site-wide policy, not a data-specific licence.\n"
     }
   ]
 }
