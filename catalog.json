@@ -1,9 +1,9 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 9,
+  "count": 10,
   "by_status": {
-    "live": 9
+    "live": 10
   },
   "entries": [
     {
@@ -465,6 +465,53 @@
       "license": "OGL-Canada-2.0 (Open Government Licence – Canada, per each dataset record)",
       "attribution": "Immigration, Refugees and Citizenship Canada, Monthly IRCC Updates (Open Government Portal)",
       "notes": "Human-verified 2026-10-31: HTTP 200. The IRCC organisation URL https://open.canada.ca/data/en/organization/cic redirects to this search page, which says \"Found 62 records\" with \"Asylum Claimants – Monthly IRCC Updates\" first (\"Record Modified: Oct 22, 2026 ... Formats: HTML XLSX CSV\"). The CKAN API (https://open.canada.ca/data/api/action/package_search, HTTP 200, no key) lists 12 \"Monthly IRCC Updates\" datasets, including Permanent Residents (id f7e5498e-0ad8-4417-85c9-9b8aff9b9eda, monthly, 52 CSV/XLSX resources, modified 2026-10-20), Asylum Claimants (b6cbcf4d-f763-4924-a2fb-8cc4a06e3de4), study permit and TFWP/IMP work permit holders, and archived Syrian, Afghan and Resettled Refugees series. The Permanent Residents description warns: \"Values between 0 and 5 are shown as “--“ and all other values are rounded to the nearest multiple of 5.\" The 2015 start year is from general knowledge and wasn't checked. Statistics Canada's immigration subject page (https://www150.statcan.gc.ca/n1/en/subjects/immigration_and_ethnocultural_diversity) redirected to the generic subjects index and isn't cataloged; its content is mostly about the stock of immigrants (census), which belongs to population-almanac.\nLicence checked 2026-10-31: every Monthly IRCC Updates record returned by the API has license_title \"Open Government Licence - Canada\" (https://open.canada.ca/en/open-government-licence-canada). That licence page says \"The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes\" and that you must \"Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s)\". The licence page text includes \"version 2.0\".\n"
+    },
+    {
+      "id": "mexico-upmrip-boletines-estadisticos",
+      "type": "dataset",
+      "title": "Mexico UPMRIP Migration Statistics Bulletins (Boletines estadísticos)",
+      "description": "Mexico's official migration statistics from the Unidad de Política Migratoria, Registro e Identidad de Personas (Secretaría de Gobernación): monthly and annual statistical bulletins and data tables on entries, documentation and stay status of foreigners, people in an irregular migration situation presented to the immigration authority, protection of migrants, and returns of Mexicans from the United States and Canada. The key official source on migration through and from Mexico.\n",
+      "publisher": "Unidad de Política Migratoria, Registro e Identidad de Personas (UPMRIP), Secretaría de Gobernación",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "MX"
+      },
+      "topics": [
+        "migration-flows",
+        "irregular-migration",
+        "immigration-enforcement",
+        "returns",
+        "mexico",
+        "latin-america"
+      ],
+      "source": {
+        "canonical_url": "https://portales.segob.gob.mx/es/PoliticaMigratoria/Boletines_Estadisticos"
+      },
+      "access": {
+        "method": [
+          "web"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Mexico (national; by state and nationality in some tables)",
+        "temporal": "2002-2026 (annual bulletins from 2002; 2026 monthly bulletin latest)",
+        "cadence": "monthly"
+      },
+      "license": "unverified — no data licence on the page; the gob.mx portal terms (gob.mx/terminos) allow viewing and download for personal, non-commercial use only",
+      "attribution": "Unidad de Política Migratoria, Registro e Identidad de Personas, SEGOB, Boletín estadístico",
+      "notes": "Human-verified 2026-10-31: HTTP 200, but the response is a 730-byte \"Error ... This page can't be displayed. Contact support\" page (a web application firewall) for curl with a browser user agent and for headless Chromium alike. The content was read only through WebFetch, so the link checker will probably see this error page. WebFetch shows the Dirección de Estadística page of the UPMRIP with \"Boletines estadísticos\" (a 2026 monthly bulletin and annual bulletins 2002-2025) and \"Cuadros de datos (2026)\" on entries, documentation and stay status, people in an irregular migration situation, protection groups, and returns of Mexicans from the United States and Canada. The month of the latest bulletin wasn't shown. File formats weren't checked, so `format` is omitted. The former host politicamigratoria.gob.mx didn't answer (connection failed).\nLicence checked 2026-10-31, NOT verified for the data: the bulletins page has no licence statement. The gob.mx portal terms (https://www.gob.mx/terminos, HTTP 200) say \"Se autoriza al Usuario a visualizar y descargar los materiales contenidos en el sitio solamente para su uso personal y no para un uso comercial\" and \"El Usuario no deberá modificar, reproducir o mostrar pública o comercialmente los materiales\". It's not certain those portal-wide terms govern these statistics (the page sits on portales.segob.gob.mx). Mexico's open data licence (Libre Uso MX) applies only to datasets on datos.gob.mx, which returned an Akamai 403 and couldn't be searched for an equivalent dataset.\n"
     }
   ]
 }

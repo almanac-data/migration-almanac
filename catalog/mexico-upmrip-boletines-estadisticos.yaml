@@ -1,0 +1,41 @@
+id: mexico-upmrip-boletines-estadisticos
+type: dataset
+title: Mexico UPMRIP Migration Statistics Bulletins (Boletines estadísticos)
+description: |
+  Mexico's official migration statistics from the Unidad de Política Migratoria, Registro e Identidad de Personas (Secretaría de Gobernación): monthly and annual statistical bulletins and data tables on entries, documentation and stay status of foreigners, people in an irregular migration situation presented to the immigration authority, protection of migrants, and returns of Mexicans from the United States and Canada. The key official source on migration through and from Mexico.
+publisher: Unidad de Política Migratoria, Registro e Identidad de Personas (UPMRIP), Secretaría de Gobernación
+jurisdiction:
+  scope: national
+  country: MX
+topics:
+- migration-flows
+- irregular-migration
+- immigration-enforcement
+- returns
+- mexico
+- latin-america
+source:
+  canonical_url: https://portales.segob.gob.mx/es/PoliticaMigratoria/Boletines_Estadisticos
+access:
+  method:
+  - web
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Mexico (national; by state and nationality in some tables)
+  temporal: 2002-2026 (annual bulletins from 2002; 2026 monthly bulletin latest)
+  cadence: monthly
+license: unverified — no data licence on the page; the gob.mx portal terms (gob.mx/terminos) allow viewing and download for personal, non-commercial use only
+attribution: Unidad de Política Migratoria, Registro e Identidad de Personas, SEGOB, Boletín estadístico
+notes: |
+  Human-verified 2026-10-31: HTTP 200, but the response is a 730-byte "Error ... This page can't be displayed. Contact support" page (a web application firewall) for curl with a browser user agent and for headless Chromium alike. The content was read only through WebFetch, so the link checker will probably see this error page. WebFetch shows the Dirección de Estadística page of the UPMRIP with "Boletines estadísticos" (a 2026 monthly bulletin and annual bulletins 2002-2025) and "Cuadros de datos (2026)" on entries, documentation and stay status, people in an irregular migration situation, protection groups, and returns of Mexicans from the United States and Canada. The month of the latest bulletin wasn't shown. File formats weren't checked, so `format` is omitted. The former host politicamigratoria.gob.mx didn't answer (connection failed).
+  Licence checked 2026-10-31, NOT verified for the data: the bulletins page has no licence statement. The gob.mx portal terms (https://www.gob.mx/terminos, HTTP 200) say "Se autoriza al Usuario a visualizar y descargar los materiales contenidos en el sitio solamente para su uso personal y no para un uso comercial" and "El Usuario no deberá modificar, reproducir o mostrar pública o comercialmente los materiales". It's not certain those portal-wide terms govern these statistics (the page sits on portales.segob.gob.mx). Mexico's open data licence (Libre Uso MX) applies only to datasets on datos.gob.mx, which returned an Akamai 403 and couldn't be searched for an equivalent dataset.
