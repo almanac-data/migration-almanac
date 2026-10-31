@@ -1,0 +1,41 @@
+id: iom-displacement-tracking-matrix
+type: dataset
+title: IOM Displacement Tracking Matrix (DTM)
+description: |
+  IOM's system for tracking and monitoring displacement and population mobility in crises: baseline and mobility-tracking assessments of internally displaced people and returnees, flow monitoring along migration routes, registration and surveys, published as country reports, datasets, maps and an API. A primary operational source for displacement figures in Sudan, Ukraine, Yemen, the Sahel and elsewhere.
+publisher: International Organization for Migration (IOM)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- internal-displacement
+- idps
+- returnees
+- flow-monitoring
+- humanitarian
+source:
+  canonical_url: https://dtm.iom.int/
+access:
+  method:
+  - web
+  - api
+  auth_required: false
+  auth_note: The DTM API (v3) needs a free account and subscription key from the DTM Developer Portal; reports and public datasets need none
+  rate_limit: null
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: crisis-affected countries where DTM operates (country, Admin 1 and Admin 2 levels)
+  temporal: varies by country and operation
+  cadence: irregular
+license: proprietary (DTM Terms & Conditions; non-commercial viewing, download and print only, no redistribution or derivatives without IOM permission)
+attribution: International Organization for Migration (IOM), [month and year of publication]. DTM [title of publication]. IOM, [place of publication].
+notes: |
+  Human-verified 2026-10-31: HTTP 403. curl (browser user agent) and headless Chromium both got an Akamai "Access Denied" page. The site was read only through WebFetch, which did get the page content; the link checker may see 403. WebFetch showed the DTM homepage with "Data and analysis" (reports, datasets, maps, API), country pages, and recent datasets dated late October 2026, among them a Sudan displacement and return snapshot (27 October 2026) and a Yemen Rapid Displacement Tracking dataset (18-24 October 2026). The API page (https://dtm.iom.int/data-and-analysis/dtm-api, also via WebFetch) describes an IDP API (country, Admin 1, Admin 2) and an HNA API, "non-sensitive, aggregated figures" only, with registration and a subscription key required, and says version 3 went live in August 2025. API response formats weren't stated or checked, so `format` is omitted. The IOM Migration Data Portal (migrationdataportal.org), a separate IOM site, returned 403 to every client and isn't cataloged.
+  Licence checked 2026-10-31 (via WebFetch, so the quotes passed through a summariser): DTM Terms & Conditions (https://dtm.iom.int/terms-and-conditions): "The Materials may be viewed, downloaded, and printed for non-commercial use only, without, inter alia, any right to sell, resell, redistribute or create derivative works therefrom", and "Any extraction, translation, reproduction, and distribution ... requires the explicit prior written permission of IOM." No open licence is named. Some DTM datasets are also posted on HDX, where they may carry a different licence; that wasn't checked. These are restrictive terms: the entry links to the data but doesn't imply it can be reused.
