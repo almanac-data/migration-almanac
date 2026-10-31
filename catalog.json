@@ -1,9 +1,9 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 2,
+  "count": 3,
   "by_status": {
-    "live": 2
+    "live": 3
   },
   "entries": [
     {
@@ -56,6 +56,60 @@
       "license": "public-domain (CBP copyright notice)",
       "attribution": "U.S. Customs and Border Protection, Nationwide Encounters (CBP Public Data Portal)",
       "notes": "Human-verified 2026-10-31: HTTP 200 (headless Chromium; plain curl with a browser User-Agent got HTTP 403 from the CDN, so this site needs a headless browser). This is the CBP Public Data Portal dataset page behind the Nationwide Encounters dashboard (https://www.cbp.gov/newsroom/stats/nationwide-encounters) and the Southwest Land Border Encounters dashboard (https://www.cbp.gov/newsroom/stats/southwest-land-border-encounters, page \"Last Modified: Sep 16, 2026\"; its own CSVs are at https://www.cbp.gov/document/stats/southwest-land-border-encounters). The page offers CSVs \"by Area of Responsibility\" and \"by State\" plus a data dictionary PDF dated 09/29/2023. The newest file on the day checked was \"Nationwide Encounters Dataset FY23-FY26 by Area of Responsibility - August\", CSV dated 09/04/2026; monthly files were posted from 11/05/2025 (October) through 09/04/2026 (August). The dashboards say \"Data is extracted from live CBP systems and data sources. Statistical information is subject to change ... Final statistics are available at the conclusion of each fiscal year.\" The data portal adds that \"All analyses produced using these datasets are considered unofficial unless provided directly from CBP.\" No discontinuation notice was seen.\nLicence checked 2026-10-31: https://www.cbp.gov/site-policy-notices/copyright-notice says \"Unless a copyright is indicated, information on the U.S. Customs and Border Protection website is in the public domain and may be reproduced, published or otherwise used without the permission of the CBP. We request only that the CBP be cited as the source of the information\". This is a site-wide notice, not a data-specific licence. Not checked: CSV contents or column definitions, and the by-component dashboard.\n"
+    },
+    {
+      "id": "dhs-ohss-yearbook-immigration-statistics",
+      "type": "dataset",
+      "title": "DHS OHSS Yearbook of Immigration Statistics",
+      "description": "The Department of Homeland Security's annual compendium of US immigration flow tables by fiscal year: lawful permanent residents, refugees, asylees, naturalizations, nonimmigrant (temporary visitor) admissions, and immigration enforcement actions (apprehensions, removals, returns). Published by the DHS Office of Homeland Security Statistics (OHSS), formerly the Office of Immigration Statistics.\n",
+      "publisher": "U.S. Department of Homeland Security, Office of Homeland Security Statistics (OHSS)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "immigration",
+        "lawful-permanent-residents",
+        "refugees",
+        "asylum",
+        "naturalization",
+        "nonimmigrant-admissions",
+        "immigration-enforcement"
+      ],
+      "source": {
+        "canonical_url": "https://ohss.dhs.gov/topics/immigration/yearbook"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "html",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national; some tables by state, country of birth or citizenship)",
+        "temporal": "yearbooks FY1996-FY2024 listed (FY2024 tables partly released)",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Department of Homeland Security, Office of Homeland Security Statistics, Yearbook of Immigration Statistics",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (headless Chromium; plain curl with a browser User-Agent got HTTP 403 from the CDN, so this site needs a headless browser). The index page lists yearbooks 1996 through 2024 and says \"We release data tables as they become available. We release the final yearbook PDF in September of the following fiscal year.\" On the day checked, the 2024 and 2023 yearbooks both showed \"Download coming soon\" in place of a PDF; the newest PDF listed was the 2022 Yearbook. Index page \"Last updated: August 20, 2025\". The 2024 yearbook page (\"Last updated: August 11, 2026\") offers xlsx and HTML tables for LPRs, refugees, asylees, naturalizations and nonimmigrant admissions (\"available now\"), while \"Tables 34-43: Enforcement Actions (coming soon)\". The related OHSS \"Immigration Enforcement and Legal Processes Monthly Tables\" page (https://ohss.dhs.gov/topics/immigration/immigration-enforcement/monthly-tables) states \"This monthly report is delayed while it is under review.\"; its newest file is the November 2024 table, and the page shows \"Last updated: January 16, 2025\". The monthly tables are not cataloged as a separate entry for that reason.\nLicence checked 2026-10-31: no OHSS- or DHS-specific data licence or copyright page was found (https://www.dhs.gov/website-policies returned 404; https://www.dhs.gov/privacy-policy covers privacy only). The public-domain status rests on the work being produced by a federal agency (17 U.S.C. 105), not on a published data licence. Not checked: the table contents, the data dictionary, or whether earlier yearbooks were revised.\n"
     },
     {
       "id": "idmc-global-internal-displacement-database",
