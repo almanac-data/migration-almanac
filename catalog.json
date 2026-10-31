@@ -44,9 +44,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.cbp.gov/document/stats/nationwide-encounters",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (nationwide; by CBP area of responsibility, state, USBP sector and OFO field office)",
@@ -98,9 +100,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://ohss.dhs.gov/topics/immigration/yearbook",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national; some tables by state, country of birth or citizenship)",
@@ -148,9 +152,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.justice.gov/eoir/workload-and-adjudication-statistics",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national; some tables by state or court)",
@@ -203,9 +209,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://ec.europa.eu/eurostat/web/migration-asylum",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "EU member states and EFTA countries (some series include candidate countries)",
@@ -253,9 +261,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 403,
+        "final_url": "https://www.frontex.europa.eu/what-we-do/monitoring-and-risk-analysis/migratory-map/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "EU and Schengen-associated external borders, by route and nationality",
@@ -302,9 +312,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.ice.gov/detain/detention-management",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national and by detention facility)",
@@ -353,9 +365,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.internal-displacement.org/database/displacement-data/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (214 countries and territories)",
@@ -400,9 +414,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://dtm.iom.int/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "crisis-affected countries where DTM operates (country, Admin 1 and Admin 2 levels)",
@@ -453,9 +469,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://search.open.canada.ca/opendata/?owner_org=cic",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "Canada (national, province/territory; by country of citizenship)",
@@ -500,9 +518,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://portales.segob.gob.mx/es/PoliticaMigratoria/Boletines_Estadisticos",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "Mexico (national; by state and nationality in some tables)",
@@ -553,9 +573,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.datos.gov.co/Estad-sticas-Nacionales/Entradas-de-extranjeros-a-Colombia/96sh-4v8d",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "Colombia (national, by migration control post), by nationality",
@@ -603,9 +625,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://data-explorer.oecd.org/vis?df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_MIG%40DF_MIG&df%5Bag%5D=OECD.ELS.IMD",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "OECD member countries (destination), by country of nationality",
@@ -653,9 +677,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.rpc.state.gov/admissions-and-arrivals/",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national and by state of resettlement; by nationality of refugee)",
@@ -706,9 +732,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.gov.uk/government/collections/immigration-statistics-quarterly-release",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United Kingdom (some tables by local authority)",
@@ -757,9 +785,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://api.unhcr.org/docs/refugee-statistics.html",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (countries of origin and asylum)",
@@ -809,9 +839,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "United States (national; some tables by USCIS field office, state or country)",
@@ -860,9 +892,11 @@
       "status_source": "curator",
       "observed": {
         "checked": "2026-10-31",
-        "reachable": null,
-        "http_status": null,
-        "final_url": null
+        "reachable": true,
+        "http_status": 200,
+        "final_url": "https://datacatalog.worldbank.org/search/dataset/0037898/remittance-prices-worldwide",
+        "redirect_chain": [],
+        "fingerprint_result": "no-baseline"
       },
       "coverage": {
         "spatial": "global (377 corridors; 48 sending and 111 receiving countries)",

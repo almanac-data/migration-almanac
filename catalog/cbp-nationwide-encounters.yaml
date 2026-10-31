@@ -30,9 +30,11 @@ status_since: '2026-10-31'
 status_source: curator
 observed:
   checked: '2026-10-31'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://www.cbp.gov/document/stats/nationwide-encounters
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: United States (nationwide; by CBP area of responsibility, state, USBP sector and OFO field office)
   temporal: FY2020-present in the current CSVs (FY23-FY26 rolling file); older summary pages from FY2017

@@ -31,9 +31,11 @@ status_since: '2026-10-31'
 status_source: curator
 observed:
   checked: '2026-10-31'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: United States (national; some tables by USCIS field office, state or country)
   temporal: varies by report (Fiscal Year 2026, Quarter 3 latest)

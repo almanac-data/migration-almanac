@@ -29,9 +29,11 @@ status_since: '2026-10-31'
 status_source: curator
 observed:
   checked: '2026-10-31'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 403
+  final_url: https://www.frontex.europa.eu/what-we-do/monitoring-and-risk-analysis/migratory-map/
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: EU and Schengen-associated external borders, by route and nationality
   temporal: not checked (data as of October 2026 latest)
