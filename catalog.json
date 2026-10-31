@@ -1,9 +1,9 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 6,
+  "count": 7,
   "by_status": {
-    "live": 6
+    "live": 7
   },
   "entries": [
     {
@@ -265,6 +265,55 @@
       "license": "proprietary (Frontex legal disclaimer; private use only, other reuse needs Frontex permission)",
       "attribution": "Frontex, Detections of illegal border-crossings (FRAN and JORA data)",
       "notes": "Human-verified 2026-10-31: HTTP 200. The page \"Migratory Map\" says \"This map presents the current migratory situation in Europe. Each circle represents one of the main migratory routes into the EU.\" It links \"Detections of illegal border-crossings statistics download (updated monthly)\" to Monthly_detections_of_IBC_2026_10_05.xlsx (HTTP 200, about 1.5 MB, not opened) with \"Source: FRAN and JORA data as of October 2026.\" It cautions that \"The data presented refer to detections of illegal border-crossing rather than the number of persons, as the same person may cross the external border several times.\" The map itself is an embedded viewer and wasn't inspected. The start year and breakdowns in the spreadsheet weren't checked. The download file name changes each month, so the landing page is cataloged.\nLicence checked 2026-10-31: Frontex legal disclaimer (https://www.frontex.europa.eu/legal-disclaimer/, HTTP 200), Copyright Notice: \"This site and its content are the copyright of Frontex with the exception of the legal instruments. ... The materials provided on this website may be used for private purposes in accordance with applicable legal provisions. For use, reproduction or transmission for purposes other than private use, please request permission from Frontex.\" It's site-wide; no data-specific licence was found. Restrictive: the entry links to the data but doesn't imply it can be redistributed. The attribution string is the curator's (no citation format found).\n"
+    },
+    {
+      "id": "ice-detention-statistics",
+      "type": "dataset",
+      "title": "ICE Detention Statistics (fiscal-year spreadsheets)",
+      "description": "U.S. Immigration and Customs Enforcement custody data published as fiscal-year spreadsheets: detention population and book-ins, alternatives to detention, and facility-level detention counts with footnotes. The primary federal source for how many people ICE holds and where.\n",
+      "publisher": "U.S. Immigration and Customs Enforcement (ICE), Enforcement and Removal Operations",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "immigration-detention",
+        "immigration-enforcement",
+        "alternatives-to-detention",
+        "detention-facilities"
+      ],
+      "source": {
+        "canonical_url": "https://www.ice.gov/detain/detention-management"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national and by detention facility)",
+        "temporal": "FY2019-FY2026 year-to-date spreadsheets listed",
+        "cadence": "irregular"
+      },
+      "license": "public-domain (ICE site policies)",
+      "attribution": "U.S. Immigration and Customs Enforcement, Detention Statistics",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (headless Chromium; plain curl with a browser User-Agent got HTTP 403 from the CDN, so this site needs a headless browser). The \"Detention Statistics\" section of the Detention Management page says \"The data tables are searchable and sortable, and worksheets are protected ... Data may fluctuate until it is locked at the conclusion of the fiscal year.\" It lists \"FY 2026 ICE Statistics\" (Detention FY 2026 YTD, Alternatives to Detention FY 2026 YTD and Facilities FY 2026 YTD, Footnotes), linked as FY26_detentionStats07202026.xlsx, and \"FY 2025 ICE Statistics\" linked as FY25_detentionStats09242025.xlsx, plus \"Previous Year-End Reports\" for FY2019 through FY2024 and an Over-72-hour facilities list. The page footer reads \"Updated: 10/27/2026\", but the newest spreadsheet's filename carries the date 07/20/2026. No FY2025 year-end report appears under \"Previous Year-End Reports\" (the list starts at FY2024). No release schedule is stated on this page. The related ERO Statistics Dashboard (https://www.ice.gov/statistics) says its dashboards show data \"as of December 31, 2024. The dashboards will be updated quarterly\" and its own footer reads \"Updated: 07/24/2026\"; that dashboard was not cataloged separately.\nLicence checked 2026-10-31: https://www.ice.gov/site-policies, under \"Copyright\", says \"Information presented on the ICE Website is considered public information and may be distributed or copied. However, ICE does request that the use of appropriate byline/photo/image credit is given to ICE.\" This is a site-wide policy, not a data-specific licence. Not checked: spreadsheet contents, footnotes, or whether past files were revised.\n"
     },
     {
       "id": "idmc-global-internal-displacement-database",
