@@ -1,0 +1,43 @@
+id: oecd-international-migration-database
+type: dataset
+title: OECD International Migration Database
+description: |
+  OECD's annual series, provided mostly by national correspondents of the OECD Expert Group on Migration, on inflows and outflows of foreign population and inflows of asylum seekers by nationality, stocks of foreign population, and acquisitions of nationality, for OECD countries. Companion dataflows give standardised permanent and temporary inflows. The basis of the annual International Migration Outlook.
+publisher: Organisation for Economic Co-operation and Development (OECD)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- migration-flows
+- asylum-seekers
+- naturalisation
+- oecd
+source:
+  canonical_url: https://data-explorer.oecd.org/vis?df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_MIG%40DF_MIG&df%5Bag%5D=OECD.ELS.IMD
+access:
+  method:
+  - web
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- sdmx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: OECD member countries (destination), by country of nationality
+  temporal: varies by country and series (2024 latest year seen)
+  cadence: annual
+license: unverified — OECD terms page (oecd.org/en/about/terms-conditions.html) is behind a Cloudflare bot challenge and could not be read
+attribution: OECD, International Migration Database (OECD.ELS.IMD DSD_MIG@DF_MIG)
+notes: |
+  Human-verified 2026-10-31: HTTP 200. OECD Data Explorer is a JavaScript app; it was read in headless Chromium, titled "OECD Data Explorer • International migration database", with a default view of "Inflows of foreign population" from 2012. The dataset page on oecd.org (https://www.oecd.org/en/data/datasets/international-migration-database.html) returned a Cloudflare 403. The SDMX dataflow OECD.ELS.IMD:DSD_MIG@DF_MIG (https://sdmx.oecd.org/public/rest/, HTTP 200, no key) describes it: "annual series on flows of foreign population and of asylum seekers by nationality, stocks of foreign population by nationality, as well as acquisitions of nationality by former nationality ... based on national concepts and definitions and therefore are not fully comparable across countries." Among the latest observations in a CSV pull, the most common years were 2023 and 2024. The same agency publishes related dataflows: DF_MIG_POPF (foreign-born stocks), DF_MIG_INT_PER and DF_MIG_INT_TEMP (standardised permanent and temporary inflows), and labour-market outcomes of immigrants. Foreign-population stocks overlap with population-almanac's un-desa-international-migrant-stock in subject but not in source.
+  Licence checked 2026-10-31, NOT verified: https://www.oecd.org/en/about/terms-conditions.html returned a Cloudflare 403 to curl, headless Chromium (two attempts) and WebFetch. labor-almanac's oecd-employment-labour-market entry quotes those terms, as read earlier, as allowing data reuse "for any purpose, even for commercial use" with the OECD citation (open with attribution, not CC BY 4.0), but this curator could not re-read them.
