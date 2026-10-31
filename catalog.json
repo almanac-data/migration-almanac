@@ -1,11 +1,62 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
+    {
+      "id": "cbp-nationwide-encounters",
+      "type": "dataset",
+      "title": "CBP Nationwide and Southwest Land Border Encounters",
+      "description": "U.S. Customs and Border Protection monthly encounter counts: U.S. Border Patrol Title 8 apprehensions, Office of Field Operations Title 8 inadmissibles, and Title 42 expulsions (March 2020 to May 2023), nationwide and for the southwest land border, by area of responsibility, state, citizenship and demographic group. The most-cited series on US border crossings.\n",
+      "publisher": "U.S. Customs and Border Protection (CBP)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "border-encounters",
+        "apprehensions",
+        "immigration-enforcement",
+        "southwest-border",
+        "title-42"
+      ],
+      "source": {
+        "canonical_url": "https://www.cbp.gov/document/stats/nationwide-encounters"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (nationwide; by CBP area of responsibility, state, USBP sector and OFO field office)",
+        "temporal": "FY2020-present in the current CSVs (FY23-FY26 rolling file); older summary pages from FY2017",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (CBP copyright notice)",
+      "attribution": "U.S. Customs and Border Protection, Nationwide Encounters (CBP Public Data Portal)",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (headless Chromium; plain curl with a browser User-Agent got HTTP 403 from the CDN, so this site needs a headless browser). This is the CBP Public Data Portal dataset page behind the Nationwide Encounters dashboard (https://www.cbp.gov/newsroom/stats/nationwide-encounters) and the Southwest Land Border Encounters dashboard (https://www.cbp.gov/newsroom/stats/southwest-land-border-encounters, page \"Last Modified: Sep 16, 2026\"; its own CSVs are at https://www.cbp.gov/document/stats/southwest-land-border-encounters). The page offers CSVs \"by Area of Responsibility\" and \"by State\" plus a data dictionary PDF dated 09/29/2023. The newest file on the day checked was \"Nationwide Encounters Dataset FY23-FY26 by Area of Responsibility - August\", CSV dated 09/04/2026; monthly files were posted from 11/05/2025 (October) through 09/04/2026 (August). The dashboards say \"Data is extracted from live CBP systems and data sources. Statistical information is subject to change ... Final statistics are available at the conclusion of each fiscal year.\" The data portal adds that \"All analyses produced using these datasets are considered unofficial unless provided directly from CBP.\" No discontinuation notice was seen.\nLicence checked 2026-10-31: https://www.cbp.gov/site-policy-notices/copyright-notice says \"Unless a copyright is indicated, information on the U.S. Customs and Border Protection website is in the public domain and may be reproduced, published or otherwise used without the permission of the CBP. We request only that the CBP be cited as the source of the information\". This is a site-wide notice, not a data-specific licence. Not checked: CSV contents or column definitions, and the by-component dashboard.\n"
+    },
     {
       "id": "idmc-global-internal-displacement-database",
       "type": "dataset",
