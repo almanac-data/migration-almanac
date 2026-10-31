@@ -1,9 +1,9 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 4,
+  "count": 5,
   "by_status": {
-    "live": 4
+    "live": 5
   },
   "entries": [
     {
@@ -160,6 +160,61 @@
       "license": "public-domain (DOJ legal policies)",
       "attribution": "U.S. Department of Justice, Executive Office for Immigration Review, Workload and Adjudication Statistics",
       "notes": "Human-verified 2026-10-31: HTTP 200 (plain curl with a browser User-Agent and headless Chromium both returned 200; no headless browser needed). The page lists 22 numbered PDF tables under Caseload (\"Pending Cases, New Cases, and Total Completions\", \"FY 2026 Decision Outcomes\"), Amnesty Cases, Asylum (\"Asylum Decisions\", \"Total Asylum Applications\"), In Absentia, Motions, Representation, Unaccompanied Alien Children, Remote Hearings, Board of Immigration Appeals, OCAHO and Immigration Judge Corps. It says \"EOIR staff frequently enter and update information into the case database, so the statistics provided are subject to change\" and \"statistics for FYs 2020 and 2021 may have been affected by operational disruptions caused by COVID-19.\" Page footer: \"Updated October 20, 2026\". No release schedule, delay or discontinuation notice was seen. Duplicate check: justice-almanac has no EOIR entry. The tables are PDF summaries; EOIR's case-level data is released separately through its FOIA library, which I did not check.\nLicence checked 2026-10-31: https://www.justice.gov/legalpolicies, under \"Copyright Status and Citation\", says \"Unless otherwise indicated, information on Department of Justice websites is in the public domain and may be copied and distributed without permission. Citation of the Department of Justice as source of the information is appreciated\". This is a site-wide policy, not a data-specific licence. Not checked: individual PDF contents or their data-as-of dates.\n"
+    },
+    {
+      "id": "eurostat-migration-and-asylum",
+      "type": "dataset",
+      "title": "Eurostat Migration and Asylum Statistics",
+      "description": "Eurostat's statistics on migration and asylum in the EU and EFTA: immigration and emigration flows and citizenship acquisitions, asylum applications and first-instance and final decisions, Dublin transfers, resettlement, temporary protection for people fleeing Ukraine, residence permits, and enforcement of immigration legislation (refusals at the border, third-country nationals found illegally present, return orders and returns).\n",
+      "publisher": "Eurostat (European Commission)",
+      "jurisdiction": {
+        "scope": "regional-bloc",
+        "country": null
+      },
+      "topics": [
+        "asylum",
+        "residence-permits",
+        "immigration-enforcement",
+        "returns",
+        "temporary-protection",
+        "european-union"
+      ],
+      "source": {
+        "canonical_url": "https://ec.europa.eu/eurostat/web/migration-asylum"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "tsv",
+        "xlsx",
+        "sdmx"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "EU member states and EFTA countries (some series include candidate countries)",
+        "temporal": "varies by dataset (monthly asylum data to July 2026 latest seen)",
+        "cadence": "monthly"
+      },
+      "license": "CC-BY-4.0 (Eurostat copyright notice and free re-use of data)",
+      "attribution": "Eurostat, Migration and asylum statistics",
+      "notes": "Human-verified 2026-10-31: HTTP 200. The theme page \"Migration and asylum\" is \"an entry point to the wide range of Eurostat statistics on migration and asylum\" and splits into International migration, citizenship; Asylum; Managed migration (\"residence permits issued, refusals at border, persons apprehended inside of the territory or persons subject to return\"); Children in migration; and Migrant integration. Latest news: \"Asylum applications in July 2026\" (23 October 2026), \"Temporary protection for 4.43 million in August 2026\" (12 October 2026) and \"Returns to third countries up by 10% in Q2 2026\" (30 September 2026). The cadence is monthly for asylum and temporary protection; managed-migration series are quarterly or annual. The asylum database page https://ec.europa.eu/eurostat/web/migration-asylum/asylum/database answered HTTP 200 but wasn't read in detail. population-almanac's eurostat-population-and-demography covers population stocks and net migration as a component of change; this entry covers the flows, asylum and enforcement theme. Its immigration and emigration flow tables (migr_imm*, migr_emi*) sit in this theme. Formats and API/bulk access come from Eurostat's site-wide data tools and weren't checked per dataset.\nLicence checked 2026-10-31: Eurostat copyright notice (https://ec.europa.eu/eurostat/help/copyright-notice, HTTP 200): \"The copyright for the editorial content of this website, which is owned by the EU, is licensed under the Creative Commons Attribution 4.0 International licence.\" and \"Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged.\" The licence string matches the other verticals' Eurostat entries.\n"
     },
     {
       "id": "idmc-global-internal-displacement-database",
