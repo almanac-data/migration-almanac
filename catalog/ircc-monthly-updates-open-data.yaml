@@ -1,0 +1,46 @@
+id: ircc-monthly-updates-open-data
+type: dataset
+title: IRCC Open Data – Monthly IRCC Updates
+description: |
+  Immigration, Refugees and Citizenship Canada's open datasets on the Canadian immigration system, led by the "Monthly IRCC Updates" series: new permanent residents by category, province and country of citizenship, asylum claimants, study and work permit holders, temporary-to-permanent transitions, Express Entry invitations, and operational processing. The official source for Canadian admissions and asylum claim counts.
+publisher: Immigration, Refugees and Citizenship Canada (IRCC)
+jurisdiction:
+  scope: national
+  country: CA
+topics:
+- permanent-residents
+- asylum-claimants
+- temporary-residents
+- work-permits
+- study-permits
+- canada
+source:
+  canonical_url: https://search.open.canada.ca/opendata/?owner_org=cic
+access:
+  method:
+  - web
+  - bulk
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- csv
+- xlsx
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Canada (national, province/territory; by country of citizenship)
+  temporal: varies by dataset (2015 onward for most monthly series; not checked per dataset)
+  cadence: monthly
+license: OGL-Canada-2.0 (Open Government Licence – Canada, per each dataset record)
+attribution: Immigration, Refugees and Citizenship Canada, Monthly IRCC Updates (Open Government Portal)
+notes: |
+  Human-verified 2026-10-31: HTTP 200. The IRCC organisation URL https://open.canada.ca/data/en/organization/cic redirects to this search page, which says "Found 62 records" with "Asylum Claimants – Monthly IRCC Updates" first ("Record Modified: Oct 22, 2026 ... Formats: HTML XLSX CSV"). The CKAN API (https://open.canada.ca/data/api/action/package_search, HTTP 200, no key) lists 12 "Monthly IRCC Updates" datasets, including Permanent Residents (id f7e5498e-0ad8-4417-85c9-9b8aff9b9eda, monthly, 52 CSV/XLSX resources, modified 2026-10-20), Asylum Claimants (b6cbcf4d-f763-4924-a2fb-8cc4a06e3de4), study permit and TFWP/IMP work permit holders, and archived Syrian, Afghan and Resettled Refugees series. The Permanent Residents description warns: "Values between 0 and 5 are shown as “--“ and all other values are rounded to the nearest multiple of 5." The 2015 start year is from general knowledge and wasn't checked. Statistics Canada's immigration subject page (https://www150.statcan.gc.ca/n1/en/subjects/immigration_and_ethnocultural_diversity) redirected to the generic subjects index and isn't cataloged; its content is mostly about the stock of immigrants (census), which belongs to population-almanac.
+  Licence checked 2026-10-31: every Monthly IRCC Updates record returned by the API has license_title "Open Government Licence - Canada" (https://open.canada.ca/en/open-government-licence-canada). That licence page says "The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes" and that you must "Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s)". The licence page text includes "version 2.0".
