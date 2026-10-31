@@ -1,0 +1,44 @@
+id: world-bank-remittance-prices-worldwide
+type: dataset
+title: World Bank Remittance Prices Worldwide (RPW)
+description: |
+  The World Bank's quarterly database of what it costs to send and receive small amounts of money between countries: fees and exchange-rate margins by service provider across 377 corridors, from 48 sending to 111 receiving countries. The source for SDG indicator 10.c.1 on remittance costs.
+publisher: World Bank
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- remittances
+- remittance-costs
+- payments
+- sdg-10
+source:
+  canonical_url: https://datacatalog.worldbank.org/search/dataset/0037898/remittance-prices-worldwide
+access:
+  method:
+  - web
+  - bulk
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+- pdf
+status: live
+status_since: '2026-10-31'
+status_source: curator
+observed:
+  checked: '2026-10-31'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (377 corridors; 48 sending and 111 receiving countries)
+  temporal: 2011-2025
+  cadence: quarterly
+license: CC-BY-4.0 (World Bank Data Catalog dataset licence)
+attribution: The World Bank, Remittance Prices Worldwide, available at http://remittanceprices.worldbank.org
+notes: |
+  Human-verified 2026-10-31: HTTP 200 (curl). The page is a JavaScript app, read in headless Chromium. The Data Catalog page "Remittance Prices Worldwide" (version 7, latest, "Metadata last updated on Sep 28, 2026") "Provides data on the cost of sending and receiving relatively small amounts of money from one country to another. Data cover 377 country corridors worldwide, from 48 remittance sending countries to 111 receiving countries." It offers DataBank views by sending country, corridor and receiving country, a "Complete Dataset" in Excel (last updated Sep 23, 2026, 48.4 MB, with an API Service link) and a quarterly report PDF (Apr 17, 2026). Temporal coverage is 2011-2025, periodicity quarter. The RPW site itself (https://remittanceprices.worldbank.org/) returned a Cloudflare 403 to curl and headless Chromium. The attribution string comes from a search-result snippet of that site and wasn't read directly. Remittance flow volumes (personal remittances received and paid) are WDI indicators, already covered by economy-almanac's world-bank-world-development-indicators, and aren't duplicated here. The old KNOMAD remittances data URL (https://www.knomad.org/data/remittances) now redirects to a World Bank brief, which says KNOMAD was "Active from 2013 until 2024".
+  Licence checked 2026-10-31: the Data Catalog page's "Data Access and Licensing" section reads "License: Creative Commons Attribution 4.0. This dataset is licensed under Creative Commons Attribution 4.0". It's a dataset-specific statement. The underlying price data are collected through a provider (FXC Intelligence, per the search snippet; not checked).
