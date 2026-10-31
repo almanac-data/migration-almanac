@@ -1,9 +1,9 @@
 {
   "name": "Migration Almanac",
   "description": "An open, versioned index of public migration data.",
-  "count": 12,
+  "count": 13,
   "by_status": {
-    "live": 12
+    "live": 13
   },
   "entries": [
     {
@@ -615,6 +615,56 @@
       "license": "unverified — OECD terms page (oecd.org/en/about/terms-conditions.html) is behind a Cloudflare bot challenge and could not be read",
       "attribution": "OECD, International Migration Database (OECD.ELS.IMD DSD_MIG@DF_MIG)",
       "notes": "Human-verified 2026-10-31: HTTP 200. OECD Data Explorer is a JavaScript app; it was read in headless Chromium, titled \"OECD Data Explorer • International migration database\", with a default view of \"Inflows of foreign population\" from 2012. The dataset page on oecd.org (https://www.oecd.org/en/data/datasets/international-migration-database.html) returned a Cloudflare 403. The SDMX dataflow OECD.ELS.IMD:DSD_MIG@DF_MIG (https://sdmx.oecd.org/public/rest/, HTTP 200, no key) describes it: \"annual series on flows of foreign population and of asylum seekers by nationality, stocks of foreign population by nationality, as well as acquisitions of nationality by former nationality ... based on national concepts and definitions and therefore are not fully comparable across countries.\" Among the latest observations in a CSV pull, the most common years were 2023 and 2024. The same agency publishes related dataflows: DF_MIG_POPF (foreign-born stocks), DF_MIG_INT_PER and DF_MIG_INT_TEMP (standardised permanent and temporary inflows), and labour-market outcomes of immigrants. Foreign-population stocks overlap with population-almanac's un-desa-international-migrant-stock in subject but not in source.\nLicence checked 2026-10-31, NOT verified: https://www.oecd.org/en/about/terms-conditions.html returned a Cloudflare 403 to curl, headless Chromium (two attempts) and WebFetch. labor-almanac's oecd-employment-labour-market entry quotes those terms, as read earlier, as allowing data reuse \"for any purpose, even for commercial use\" with the OECD citation (open with attribution, not CC BY 4.0), but this curator could not re-read them.\n"
+    },
+    {
+      "id": "state-prm-refugee-admissions",
+      "type": "dataset",
+      "title": "US Refugee Admissions and Arrivals (Refugee Processing Center)",
+      "description": "The State Department Bureau of Population, Refugees, and Migration's monthly reports on refugees admitted through the U.S. Refugee Admissions Program (USRAP), by country of chargeability, nationality, US state of resettlement and month, plus Amerasian and Iraqi/Afghan Special Immigrant Visa arrivals. The archive holds arrivals by region since 1975 and the annual proposed-admissions reports to Congress. Formerly published as WRAPSNET.\n",
+      "publisher": "U.S. Department of State, Bureau of Population, Refugees, and Migration (Refugee Processing Center)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "refugees",
+        "refugee-resettlement",
+        "special-immigrant-visas",
+        "humanitarian-admissions"
+      ],
+      "source": {
+        "canonical_url": "https://www.rpc.state.gov/admissions-and-arrivals/"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "xlsx",
+        "pdf"
+      ],
+      "status": "live",
+      "status_since": "2026-10-31",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-10-31",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States (national and by state of resettlement; by nationality of refugee)",
+        "temporal": "1975-present (regional totals); current fiscal year in detail (as of September 30, 2026)",
+        "cadence": "monthly"
+      },
+      "license": "unverified — State Department public-domain notice conflicts with the RPC site's \"All rights reserved\" terms",
+      "attribution": "U.S. Department of State, Bureau of Population, Refugees, and Migration, Refugee Processing Center, Admissions & Arrivals",
+      "notes": "Human-verified 2026-10-31: HTTP 200 (plain curl with a browser User-Agent and headless Chromium both returned 200; no headless browser needed). The old URL https://www.wrapsnet.org/admissions-and-arrivals/ returns HTTP 308 and redirects here. The page says \"Reports are posted on the 5th of the following month, or the following Monday if the 5th is on a weekend\" and \"Historical monthly arrivals are subject to change due to reconciliation.\" On the day checked it offered \"Refugee Admissions Report as of September 30, 2026\" (xlsx) and PDFs for refugee arrivals by state and nationality, Amerasian arrivals and SIV arrivals, all as of September 30, 2026. The Archives page (https://www.rpc.state.gov/archives/) lists \"Refugee Admissions by Region since 1975 as of September 30, 2026\" and FY arrivals-by-region files through FY 2026. Its \"Reports to Congress\" list ends at \"FY 2024 Report to Congress\"; no FY 2025 or FY 2026 report is listed. No suspension or discontinuation notice was seen on either page. State Department visa statistics (travel.state.gov) were not cataloged in this entry.\nLicence checked 2026-10-31: https://www.state.gov/copyright-information says \"Unless a copyright is indicated, information on State Department websites is in the public domain and may be copied and distributed without permission. Citation of the U.S. State Department as source of the information is appreciated.\" However, the RPC site's own https://www.rpc.state.gov/terms-of-use/ reads, under \"Copyright And Trademark Notices\", \"All contents of the U.S. Refugee Admissions Program Web Site are: and/or its suppliers. All rights reserved.\" That text looks like an unfilled template, but it is what the site says, so the licence is left unverified. Not checked: file contents and how far back the monthly archive goes.\n"
     }
   ]
 }
