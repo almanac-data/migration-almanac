@@ -27,6 +27,14 @@ format:
 status: live
 status_since: '2026-10-31'
 status_source: curator
+fingerprint:
+  sha256: null
+  etag: null
+  content_length: null
+  captured: '2026-10-31'
+  algo: sha256
+  lead_hash: 07fa1d16d10118ec916f9bfe78de2fd0673607b5db0d327a58a5aae09d749b93
+  lead_algo: sha256
 observed:
   checked: '2026-10-31'
   reachable: true
@@ -34,6 +42,13 @@ observed:
   final_url: https://www.rpc.state.gov/admissions-and-arrivals/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261023232329/https://www.rpc.state.gov/admissions-and-arrivals/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-23'
+  notes: Wayback capture made while the resource was live.
 coverage:
   spatial: United States (national and by state of resettlement; by nationality of refugee)
   temporal: 1975-present (regional totals); current fiscal year in detail (as of September 30, 2026)

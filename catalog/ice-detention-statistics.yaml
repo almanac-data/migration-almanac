@@ -33,6 +33,13 @@ observed:
   final_url: https://www.ice.gov/detain/detention-management
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261030161232/https://www.ice.gov/detain/detention-management
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-30'
+  notes: Wayback capture made while the resource was live.
 coverage:
   spatial: United States (national and by detention facility)
   temporal: FY2019-FY2026 year-to-date spreadsheets listed
