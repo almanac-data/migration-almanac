@@ -36,7 +36,7 @@ fingerprint:
   lead_hash: 07fa1d16d10118ec916f9bfe78de2fd0673607b5db0d327a58a5aae09d749b93
   lead_algo: sha256
 observed:
-  checked: '2026-10-31'
+  checked: '2026-11-01'
   reachable: true
   http_status: 200
   final_url: https://www.rpc.state.gov/admissions-and-arrivals/
