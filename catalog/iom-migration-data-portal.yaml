@@ -1,0 +1,41 @@
+id: iom-migration-data-portal
+type: dataset
+title: IOM Migration Data Portal
+description: |
+  IOM's portal of international migration statistics, compiled from more than 25 data providers: an interactive world map of internationally comparable indicators (immigration, emigration, labour migration, remittances, missing migrants, refugees, internal displacement and more), key global figures, a data catalogue, and thematic and regional overviews explaining the sources.
+publisher: International Organization for Migration (IOM), Global Data Institute
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- migration
+- international
+- data-portal
+- remittances
+- displacement
+source:
+  canonical_url: https://www.migrationdataportal.org/
+access:
+  method:
+  - web
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format: []
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Global (country level; national data for four pilot countries)
+  temporal: varies by indicator and source (not checked)
+  cadence: irregular
+license: unverified — the portal's Terms of use page (https://www.migrationdataportal.org/terms-use) answered HTTP 503 "Site under maintenance" to every client on 2026-11-01; most data are secondary, from UN DESA, UNICEF and other providers
+attribution: International Organization for Migration (IOM), Migration Data Portal (cite the original data provider shown for each indicator)
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (plain curl, and headless Chromium in new headless mode). curl with a browser User-Agent got HTTP 403, so the block seen on 2026-10-31 appears to depend on the client. The About page says the site "is designed to help policy makers, national statistics officers, journalists and the general public interested in the field of migration to navigate the increasingly complex landscape of international migration data". It says the interactive world map "visualizes international, publicly-available and internationally comparable migration data", that national data cover "four pilot countries -- Switzerland, South Africa, New Zealand and Germany", that "An inventory of all public data available in the Portal's database and interactive dashboards can be found in the data catalogue" (https://www.migrationdataportal.org/data-catalogue), and that "The Portal features secondary data from more than 25 data providers and data sources". The home page says "All data is from international sources, such as UN DESA and UNICEF." It complements iom-displacement-tracking-matrix. Download formats, an API and update cadence were not checked, so format is left empty.
+  Licence checked 2026-11-01: not verified. The footer links "Terms of use" at https://www.migrationdataportal.org/terms-use, which answered HTTP 503 with "The Migration Data Portal is currently under maintenance and will be back online shortly" to curl and headless Chromium on several attempts, while other pages loaded; WebFetch got 403. No licence is asserted. Because the data are secondary, the original providers' terms also apply. IOM's DTM terms are restrictive (see iom-displacement-tracking-matrix), but I did not assume they cover this portal.
