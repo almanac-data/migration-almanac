@@ -32,6 +32,13 @@ observed:
   final_url: https://dtm.iom.int/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261002042239/https://dtm.iom.int/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-02'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: crisis-affected countries where DTM operates (country, Admin 1 and Admin 2 levels)
   temporal: varies by country and operation

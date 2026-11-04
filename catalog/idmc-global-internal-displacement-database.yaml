@@ -35,6 +35,13 @@ observed:
   final_url: https://www.internal-displacement.org/database/displacement-data/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261104212613/https://www.internal-displacement.org/database/displacement-data/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-04'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now.'
 coverage:
   spatial: global (214 countries and territories)
   temporal: 2008-2025

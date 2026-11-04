@@ -37,6 +37,13 @@ observed:
   final_url: https://search.open.canada.ca/opendata/?owner_org=cic
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20251105193659/https://search.open.canada.ca/opendata/?owner_org=cic
+  authenticity: timestamped
+  permission: ok
+  captured: '2025-11-05'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: Canada (national, province/territory; by country of citizenship)
   temporal: varies by dataset (2015 onward for most monthly series; not checked per dataset)
