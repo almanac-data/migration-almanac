@@ -254,6 +254,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104212105/https://ec.europa.eu/eurostat/web/migration-asylum",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "EU member states and EFTA countries (some series include candidate countries)",
         "temporal": "varies by dataset (monthly asylum data to July 2026 latest seen)",
@@ -306,6 +316,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261010130422/https://www.frontex.europa.eu/what-we-do/monitoring-and-risk-analysis/migratory-map/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-10",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "EU and Schengen-associated external borders, by route and nationality",
         "temporal": "not checked (data as of October 2026 latest)",
@@ -420,6 +440,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104212613/https://www.internal-displacement.org/database/displacement-data/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "global (214 countries and territories)",
         "temporal": "2008-2025",
@@ -469,6 +499,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261002042239/https://dtm.iom.int/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-02",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "crisis-affected countries where DTM operates (country, Admin 1 and Admin 2 levels)",
         "temporal": "varies by country and operation",
@@ -518,6 +558,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261012123541/https://www.migrationdataportal.org/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-12",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 520)."
+        }
+      ],
       "coverage": {
         "spatial": "Global (country level; national data for four pilot countries)",
         "temporal": "varies by indicator and source (not checked)",
@@ -573,6 +623,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20251105193659/https://search.open.canada.ca/opendata/?owner_org=cic",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2025-11-05",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "Canada (national, province/territory; by country of citizenship)",
         "temporal": "varies by dataset (2015 onward for most monthly series; not checked per dataset)",
@@ -622,6 +682,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104213642/https://portales.segob.gob.mx/es/PoliticaMigratoria/Boletines_Estadisticos",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "Mexico (national; by state and nationality in some tables)",
         "temporal": "2002-2026 (annual bulletins from 2002; 2026 monthly bulletin latest)",
@@ -677,6 +747,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261011162448/https://www.datos.gov.co/Estad-sticas-Nacionales/Entradas-de-extranjeros-a-Colombia/96sh-4v8d",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "Colombia (national, by migration control post), by nationality",
         "temporal": "2012-2026",
@@ -729,6 +809,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104214138/https://data-explorer.oecd.org/vis?df%5Bds%5D=dsDisseminateFinalDMZ&df%5Bid%5D=DSD_MIG%40DF_MIG&df%5Bag%5D=OECD.ELS.IMD",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "OECD member countries (destination), by country of nationality",
         "temporal": "varies by country and series (2024 latest year seen)",
@@ -855,6 +945,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261021174009/https://www.gov.uk/government/collections/immigration-statistics-quarterly-release",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-21",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "United Kingdom (some tables by local authority)",
         "temporal": "varies by table (year ending June 2026 latest)",

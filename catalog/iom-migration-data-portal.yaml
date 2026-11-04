@@ -32,6 +32,13 @@ observed:
   final_url: https://www.migrationdataportal.org/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261012123541/https://www.migrationdataportal.org/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-12'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 520).'
 coverage:
   spatial: Global (country level; national data for four pilot countries)
   temporal: varies by indicator and source (not checked)

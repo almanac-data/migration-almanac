@@ -34,6 +34,13 @@ observed:
   final_url: https://www.frontex.europa.eu/what-we-do/monitoring-and-risk-analysis/migratory-map/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261010130422/https://www.frontex.europa.eu/what-we-do/monitoring-and-risk-analysis/migratory-map/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-10'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: EU and Schengen-associated external borders, by route and nationality
   temporal: not checked (data as of October 2026 latest)

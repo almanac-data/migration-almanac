@@ -37,6 +37,13 @@ observed:
   final_url: https://www.datos.gov.co/Estad-sticas-Nacionales/Entradas-de-extranjeros-a-Colombia/96sh-4v8d
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261011162448/https://www.datos.gov.co/Estad-sticas-Nacionales/Entradas-de-extranjeros-a-Colombia/96sh-4v8d
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-11'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: Colombia (national, by migration control post), by nationality
   temporal: 2012-2026
