@@ -35,6 +35,13 @@ observed:
   final_url: https://api.unhcr.org/docs/refugee-statistics.html
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20260315113034/https://api.unhcr.org/docs/refugee-statistics.html
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-03-15'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 200).'
 coverage:
   spatial: global (countries of origin and asylum)
   temporal: 1951-2025 (population totals); other series start later
