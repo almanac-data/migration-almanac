@@ -1008,6 +1008,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20260315113034/https://api.unhcr.org/docs/refugee-statistics.html",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-03-15",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 200)."
+        }
+      ],
       "coverage": {
         "spatial": "global (countries of origin and asylum)",
         "temporal": "1951-2025 (population totals); other series start later",
@@ -1125,6 +1135,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261111220240/https://datacatalog.worldbank.org/search/dataset/0037898/remittance-prices-worldwide",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-11",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "global (377 corridors; 48 sending and 111 receiving countries)",
         "temporal": "2011-2025",
