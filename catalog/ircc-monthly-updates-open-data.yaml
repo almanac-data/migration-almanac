@@ -39,6 +39,12 @@ observed:
   fingerprint_result: no-baseline
 recovery:
 - via: wayback
+  url: https://web.archive.org/web/20261118223753/https://search.open.canada.ca/opendata/?owner_org=cic
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-18'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-18: a capture it requested from Save Page Now.'
+- via: wayback
   url: https://web.archive.org/web/20251105193659/https://search.open.canada.ca/opendata/?owner_org=cic
   authenticity: timestamped
   permission: ok
